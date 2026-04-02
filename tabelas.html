@@ -62,5 +62,54 @@
     <td>800</td>
 </tr>
    </table>
+
+   <hr>
+
+   <h2>Cabeçalho, corpo e rodapé da tabela</h2>
+   <p>Estes elementos criam seções dentro da tabela que pode receber uma formatação diferenciada, ultil para formatação de tabelas com muitos dados.</p>
+
+   <table border="1">
+     <caption>Tabela thead/tfoot/tbody</caption>
+
+     <!-- traad é o cabeçalho da tabela, agrupamento semantico -->
+     <thead>
+        <tr> 
+            <!-- Mescla 2 coluna -->
+            <th colspan="2">Coluna 1</th>
+            <th>Coluna 2</th>
+        </tr>
+     </thead>
+    
+     <!-- Rodape da tabela, ultil para totais e observações -->
+    <tfoot>
+        <tr>
+            <tr>Resultado 1</tr>
+            <tr>Resultado 2</tr>
+            <tr>Resultado 3</tr>
+        </tr>
+    </tfoot>
+
+    <!-- Cospo da tabela com dados principais -->
+ <tbody>
+    <tr>
+        <!-- Mesclar a céula vertical (duas linhas) -->
+        <td rowspan="2">Conteudo A</td>
+        <td>Conteudo B</td>
+        <td>Conteudo C</td>
+    </tr>
+    <tr>
+        <!-- <td>Conteudo D</td> -->
+        <td>Conteudo E</td>
+        <td>Conteudo F</td>
+    </tr>
+    <tr>
+        <td>Conteudo G</td>
+        <td>Conteudo H</td>
+        <td>Conteudo I</td>
+        
+    </tr>
+</tbody>
+
+    </table>
 </body>
 </html>
